@@ -1,0 +1,148 @@
+1.IDENTIFIERS
+2.RESERVED WORDS
+3.DATA TYPES
+4.Slicing of Sting 
+5.TYPE CASTING
+6.Fundamental Data Types vs Immutability:
+7.Escape Characters:
+8.OPERATORS
+    -Arithmetic Operators
+    -Relational Operators OR Comparison Operators
+    -Logical operators
+    -Bitwise oeprators
+    -Assignment operators
+    -Special operators
+9.Operator Precedence (Priority)
+10.Mathematical Functions (math Module)
+11. INPUT AND OUTPUT STATEMENTS
+12. COMMAND LINE ARGUMENTS
+13. Flow Control STATEMENTS
+    -Conditional Statements (if, if-elif, if-elif-else)
+    -Transfer Statements (break, continue, pass)
+    -Iterative Statements (for, while)
+    -Loops with else block
+    -del Statement
+    -Difference between del and None
+14. Python Pattern Programs
+15. String Data Type (Detailed)
+    -Comparison of Strings
+    -Removing Spaces from the String
+    -Finding Substrings
+    -For forward direction (find, index)
+    -For backward direction (rfind, rindex)
+    -Splitting of Strings
+    -Joining of Strings
+    -Changing Case of a String
+    -Checking Starting and Ending Part of the String
+    -To Check Type of Characters Present in a String
+    -Formatting the Strings
+    -Program to Reverse Order of Words
+16. List Data Structure 
+    -Creation of List Objects
+    -Accessing Elements of List
+    -Important Functions of List (len, count, index)
+    -Manipulating Elements of List (append, insert, extend, remove, pop)
+    -ordering elements of List (reverse, sort)
+    -Aliasing and Cloning of List Objects (By using Slice Operator, By using copy() Function, Difference between = Operator and copy() Function)
+    -Using Mathematical Operators for List Objects
+    -Comparing List Objects
+    -Membership Operators:
+    -clear() Function:
+    -Nested Lists
+    -Nested List as Matrix:
+    -List Comprehensions
+17. Tuple Data Structure
+    -Accessing Elements of Tuple
+    -Tuple vs Immutability
+    -Mathematical Operators for Tuple
+    -Important Functions of Tuple (len,count,index,sorted,min,max,cmp)
+    -Tuple Packing and Unpacking
+    -Differences between List and Tuple
+18. Set Data Structure
+    -Creation of Set Objects
+    -Important Functions of Set (add, update,copy,pop, remove,discard,clear)
+    -Mathematical Operations on the Set (union, intersection, differance, systemeatic_differance)
+    -Membership Operators: (in, not in)
+    -Set Comprehension
+19. Dictionary Data Strucutre 
+    -How to Create Dictionary
+    -How to Access Data from the Dictionary
+    -How to Update Dictionaries
+    -How to Delete Elements from Dictionary
+    -Important Functions of Dictionary (dict,len,clear,get,pop,popitems,keys,values, items,copy,setdefault,update)
+    -Dictionary Comprehension
+20. Functions
+    -Built in Functions
+    -User Defined Functions
+    -Parameters
+    -Return Statement
+    -Returning Multiple Values from a Function
+    -Types of Arguments (Positional Arguments,Keyword Arguments, Default Arguments,Variable Length Arguments, )
+    -Types of Variables (Global Variables, Local Variables)
+    -global Keyword
+    -Recursive Functions
+    -Anonymous Functions
+    -Normal Function
+    -Lambda Expression
+    -filter() Function
+    -map() Function
+    -reduce() Function
+    -Nested Functions
+21. Modules, Package
+22. OOPs 
+    -What is Class
+    -How to define a Class
+    -What is Object
+    -What is Reference Variable
+    -Self Variable
+    -Constructor Concept
+    -Types of Variables
+    -Inner Class
+    -Garbage Collection
+        -Destructors
+23. Inheritance 
+24. Exception Handling 
+    -Syntax Errors
+    - Runtime Errors
+    -What is Exception
+    -Default Exception Handing in Python
+    -Python's Exception Hierarchy
+    -Customized Exception Handling by using try-except
+    -Control Flow in try-Except
+    -try with Multiple except Blocks
+    -Default except Block
+    -finally Block
+    -Control Flow in try-except-finally
+    -else Block with try-except-finally
+25. DECORATOR FUNCTIONS
+26. Generator Functions 
+27. File handling 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
