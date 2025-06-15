@@ -1,0 +1,281 @@
+Features of Python
+    -Free Ware & Open Source
+    -High Level Programming Language
+        a=10
+        b=20
+        print(a+b) Anyone Can Easily Understand this Programming 
+    -Platform Independent
+        PVM for Windows
+        PVM for Linux
+        PVM for MAC
+    -Portability
+        Python Application will work on Another Platform with minimal changes 
+        or no changes, this migration capiblity is called as Portability.
+        ex. program which is designed in Windows Platform work fine in Linux Platform
+    -Dynamically Typed 
+        No need to declear data type 
+        ex. 
+        a=10
+        b=20
+        print(a+b)
+        print(type(a))
+        print(type(b))
+    -Procedure oriented and Object Oriented 
+        Python is OOPL, Scripting, Functional 
+        Procedure oriented (It focuses on step-by-step instructions to perform tasks.)
+    -Interpreated 
+        PVM will take care of compilation
+        If compilation fails then interpreater raises syntax error
+        ex.
+        print('Hello'
+        It gives syntax error
+    -Extensible 
+        we can extend python programm functionality by other language code.
+        we can use other language code inside python to improve performance
+    -Embedded 
+        we can used python language code to any oher languageprogramm.
+    -Extensive Library Support
+        python has rich inbuilt Libraries 
+        we are not require to develop these libraries 
+        python has batteries called as libraries
+    ex:wap to generate 5 digit otp
+        from random import randint
+        print(randint(0,9),randint(0,9),randint(0,9),randint(0,9),randint(0,9),sep='')
+Flavours of Python
+    1.cpython
+    -It is standard flavour of python to work with c-Applications
+    Jython
+    -It is for java Application, It can run on JVM
+    2.Iron Python
+    -It is for C#, .net Applications
+    3.PyPy 
+    This is 4.4 times faster than cpython
+    4.Ruby Python 
+    To Work with Rubby Applications
+    5.Anaconda Python
+    If you want to handle large amount of data like data science
+Python Versions 
+    Every new version provide support to old version.
+
+Identifires
+A name in python program is considered as Identifires may be -
+        Variable name
+        Method name
+        Class name
+        Function name
+While defining Names in Python we have to follow some rules 
+rules -
+        1. a to z
+        2. A to z
+        3. _ (underscore)
+        4. $ is not Allowed 
+        5. Identifiers should not start with digits
+        6. No Legngth limit but not recommanded to take lenthy Identifiers
+        7. _x --> Procated Variable
+           _x_ --> Private Variable
+           __x__ --> Language Level Predefined Name or Magical Names 
+
+Reserved Words:
+In any language some Words are reserved to represent some funcanality or meaning
+such words are called as Reserved Words.
+    ex-
+    import keyword
+    print(keyword.kwlist)
+
+    Observations-
+    Reserved words contains only upper case symbols True, False, None
+
+DATA TYPES: 
+    1.Integer:
+    how to represent integer datatype
+    ex:
+    a = 0b1010     # binary
+    b = 0o12       # octal
+    c = 0xA        # hexadecimal
+    print(a, b, c)  # Output: 10 10 10
+    print(type(a))  # Output: <class 'int'>
+
+    2. Float 
+    how  to represent float datatype
+    ex:
+    a = float(0b1010)    # binary to float
+    b = float(0o12)      # octal to float
+    c = float(0xA)       # hex to float
+    print(a, b, c)        # Output: 10.0 10.0 10.0
+    print(type(a))        # Output: <class 'float'>
+
+    3. Complex 
+    how to represent float datatype
+    ex:
+    a = complex(0b1010, 0b1)     # 10 + 1j
+    b = complex(0o12, 0o2)       # 10 + 2j
+    c = complex(0xA, 0x3)        # 10 + 3j
+    print(a, b, c)  # Output: (10+1j) (10+2j) (10+3j)
+    print(type(a))  # Output: <class 'complex'>
+
+    how to obtain real and imaginary values from complex data
+    ex:
+    a=10+10.5j
+    print(a.real)
+    print(a.imag)
+
+    4. Bool Data Type
+    We can represent bool data type using logical values True, False
+    ex:
+    x=True
+    print(type(x))
+
+    Note:
+    True = 1
+    True + True = 2
+    True + False = 1
+    False + True = 1
+    True + 10j = 1+ 10j
+    True + Truej = INVALID
+    True + True(j) = INVALID
+
+    5. string data type
+    string means any sequnce of characters 
+    s = 'entc'
+    s = "entc"
+    s = entc --> INVALID
+
+    how to represent multiline string ?
+    s = '''entc 
+            is 
+           branch of engg'''
+    
+    s = """entc 
+            is
+           branch of engg"""
+    
+    Note: Upto three ''' or """ (quotes) it is allowed.
+
+    ex: To Highlite specific word
+    s = "my 'name' is ravi"
+    print(s) #my name is 'ravi'
+
+    ex: Both single and double quotes (Using escape sequences \)
+    s = 'It\'s called "Python" language'
+    print(s) # It's called "Python" language
+
+    ex: Using escape sequences (\)
+    s = "The book is titled \'Learning Python\'"
+    print(s) #The book is titled 'Learning Python'
+
+    ex:
+    name = "'ravi'"
+    s = f"my name is {name}"
+    print(s) # my name is 'ravi'
+
+    #Indexing 
+    s = "entc"
+
+     -4  -3  -2  -1
+    | e | n | t | c |
+      0   1   2   3
+
+    s[0] --> 'e'   s[1] --> 'n'  s[2]--> 't'  s[3]--> 'c'
+    s[-1] --> 'c'  s[-2] --> 't'  s[-3] --> 'n'  s[-4]--> 'e'
+
+    How to find last element by -ve index
+    print(s[-1])
+
+    How to find last element by +ve index
+    print(s[len(s)-1])
+
+    How to find Length of string
+    print(len(s))
+
+Type Casting Functions
+    from one type to another type conversion
+    1. int()
+    2. float()
+    3. complex()
+    4. bool()
+    5. str()
+
+    ex.: Type Casting in Python
+   
+    # 1. int() examples
+    print("int() examples:")
+    print(int(10.6))        # float to int → 10
+    print(int("25"))        # str to int → 25
+    # print(int("25.5"))    # ❌ invalid: string float to int (uncomment to see error)
+    print()
+
+    # 2. float() examples
+    print("float() examples:")
+    print(float(10))        # int to float → 10.0
+    print(float("22.5"))    # str to float → 22.5
+    print()
+
+    # 3. complex() examples
+    print("complex() examples:")
+    print(complex(2))             # int to complex → (2+0j)
+    print(complex(2, 3))          # int, int → (2+3j)
+    print(complex("4+5j"))        # str to complex → (4+5j)
+    print()
+
+    # 4. bool() examples
+    print("bool() examples:")
+    print(bool(0))         # False
+    print(bool(1))         # True
+    print(bool(""))        # False (empty string)
+    print(bool("Hello"))   # True
+    print(bool([]))        # False (empty list)
+    print(bool([1, 2, 3])) # True (non-empty list)
+    print()
+
+    # 5. str() examples
+    print("str() examples:")
+    print(str(100))        # int to str → '100'
+    print(str(23.45))      # float to str → '23.45'
+    print(str(True))       # bool to str → 'True'
+    print(str(complex(1, 2)))  # complex to str → '(1+2j)'
+    
+    📌6. Examples of Errors (❌):
+    int("12.5")       # ❌ Error: can't convert float string to int
+    float("abc")      # ❌ Error: invalid float string
+    int(3+4j)         # ❌ Error: complex to int not allowed
+
+Fundamental Data Type Vs Immutability
+    All fundamental Data Types are Immutable
+    ie once we create object we can't change its contents
+    If we Trying to change the content, with those changes a new object is created.
+
+    ex-1:
+    x = 1
+    print('Referance is ', id(x))
+    x = x + 1
+    print('Referance is ', id(x))
+
+    ex-2: 
+    x=10
+    y=x 
+    print(id(x))
+    print(id(y))
+
+    ex-3:
+    x=10
+    y=10
+    z=10
+    print(id(x))
+    print(id(y))
+    print(id(z))
+    
+    All pointing to same object that is memory utilization 
+    Advantage: Memory Utilization will be imporoved
+               performance will be imporoved
+               
+
+
+
+
+
+
+
+
+
+
+
