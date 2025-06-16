@@ -267,7 +267,152 @@ Fundamental Data Type Vs Immutability
     All pointing to same object that is memory utilization 
     Advantage: Memory Utilization will be imporoved
                performance will be imporoved
-               
+    
+    Ex: List Data Type Vs Immutability
+    l1 = [10,20,30,40]
+    l1 = l2
+    print(id(l1)) 
+    print(id(l2)) 
+
+    Both l1 and l2 shows different Memory Location that means it is mutable in nature
+
+Collection Data Types:
+    To hold multiple values the data type which is required is called as collection data
+    type. 
+
+    1. list 
+    2. Tuple
+    3. set
+    4. frozenset
+    5. dict
+    6. bytearry 
+    7. range
+
+    1. list:
+    If you want to represent group of values as a single entity, where insertion order is 
+    preserved & duplicates are allowed.
+
+        Ex:
+        l = [10,10.5,'movie',True,10]
+        print(l)
+        print(type(l))
+
+        In list 
+        1. insertion order preserved.
+        2. duplicate objects are allowed
+        3. hetrogeneous objects are allowed (different datatype)
+        4. values should be enclosed in square bracket
+        5. index and slices are applicable
+        6. list is growable in nature
+        ex: 
+        l = [10,20,30,40,10,'movie']
+        l.append('entc')
+        print(l)
+    
+    2. Tuple:
+    It is exactly same as list except it is Immutable.
+        1. insertion order is preserved.
+        2. Indexing and Slicing Concept is applicable
+        3. duplicates are allowed.
+        4. hetrogeneous objects are allowed. (different data types)
+        5. Immutable (non Changing)
+        6. contents are fixed not editable
+
+        ex: 
+        t = (10,20,30,40,10,20,'rama')
+
+        #t[0]='movie' #error
+        #t.append('entc') #error
+
+        print(t[0]) #Indexing
+        print(t[0:4]) # Slicing
+
+        List and Tuple Difference
+
+        List           |            Tuple
+        ---------------------------------
+        mutable          Immutable
+        []                  (), () it is optional  l=1,2,3,'ram','entc'
+        More Memory         Less Memory Utilization
+        Low performance     High performance
+        can change          can't change
+        dynamic in nature   static in nature
+        growable            non-growable
+
+        ex: 
+        t = (10,) #Tuple
+        t = 10,   #Tuple
+        t = (5)   #it is integer
+        t = ,     #syntax error
+        t = ()    #empty Tuple
+    
+    3. Set
+        duplicates are not allowed and order is not Important, then we have to go for set
+        data type.
+        ex:
+        s = {1,2,3,4}
+        s = {4,3,2,1}
+        s = {2,3,1,4}
+        s = {3,4,1,2}
+
+        All above above are same set
+
+        s = {'ram','movie',34,'song',45.2,True}
+        print(type(s))
+
+        Ex:
+        sms sending Application
+            some unique no in unique order given by set
+            s = {9960084077,8982828290,7020670131,9960084077,8982828290}
+            print(s)
+            #it is same as 
+            s1 = {9960084077,8982828290,7020670131}
+            print(s1)
+        
+        No Slicing and Indexing 
+        It is mutable and growable
+            ex:
+            s2 = {3,2,5}
+            print(s2)
+            s2.add(7)
+            print(s2)
+        
+        empty set represented as
+            s = set()
+            s1 = {} # It is empty Dictionary
+
+        List                 |               set
+        ----------------------------------------
+        duplicates allowed     duplicates not allowed
+        order preserved        order not preserved
+        Indexing and Slicing   No Indexing and Slicing
+        []                     ()
+
+    4. frozenset
+        It is exactly same as set except it is Immutable
+        ex:
+        s = {10,20,30,40}
+        fs = frozenset(s)
+        print(type(fs)) # class <frozenset>
+        #fs.add(40) #Attribute error
+    
+    5. Dictionary
+        list, tuple, set, frozenset can hold individual Values, Dictionary can hold 
+        key value pairs. 
+    
+pn 62
+        
+
+
+
+
+
+
+
+
+    
+
+
 
 
 
