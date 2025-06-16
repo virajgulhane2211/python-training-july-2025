@@ -674,7 +674,7 @@ lst = [1, 2, 3, 10]
 print("10 in lst:", 10 in lst)       # True
 print("5 not in lst:", 5 not in lst) # True
 
-
+pn 75
 
 
 
