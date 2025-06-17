@@ -641,7 +641,7 @@ print("a | b =", a | b)     # Bitwise OR -> 10 | 3 = 11
 print("a ^ b =", a ^ b)     # Bitwise XOR -> 10 ^ 3 = 9
 print("~a =", ~a)           # Bitwise NOT -> -(a+1) = -11
 print("a << 1 =", a << 1)   # Left Shift -> 10 * 2 = 20  # a << b  =  a * (2 ** b)
-print("a >> 1 =", a >> 1)   # Right Shift -> 10 // 2 = 5 #a // (2 ** b)
+print("a >> 1 =", a >> 1)   # Right Shift -> 10 // 2 = 5 # a // (2 ** b)
 print()
 
 # 5. Assignment Operators
@@ -663,7 +663,7 @@ print("Special Operators:")
 # Identity Operators
 print("Identity Operators:")
 print("a is b:", a is b)       # False
-print("a is not b:", a is not b)  # True
+print("a is not b:", a is not b)  # True | is used for referance (Address) Comparison
 x=[1,2]
 y=[1,2]
 print(x is y)
@@ -674,7 +674,94 @@ lst = [1, 2, 3, 10]
 print("10 in lst:", 10 in lst)       # True
 print("5 not in lst:", 5 not in lst) # True
 
-pn 75
+Use of Operators for Various String Operations:
+Ex:
+
+print('entc'+0)
+print('entc'+'branch')
+print('entc'+' '+'branch')
+print('entc'*3)
+print('entc'*0) #empty
+print('entc'*'branch')
+print(14*'ram')
+Conclusion: + --> Both Arguments Should be string
+            * --> str and Int or Int and str
+
+following Combinations Give Us Zero Division Error:
+10/0
+10.0/0
+10//0
+10.0//0
+10%0
+
+Comparison based on Unicode Value (ASCII Values)
+a-->97          A-->65
+b-->98          B-->66
+c-->99          C-->67  etc
+
+print("Uppercase Letters (A-Z) and their ASCII values:")
+print(ord('A'))
+
+Ex:
+print('Amravati'>'amravati')#
+print('Badnera'>'badnera')#
+print('ramesh'>'Ramesh')#
+print('aaa'>'aab')# we compare each latter in this case
+
+Comparing different Data Types
+Ex:
+print('Engineering'<10) # Error different Types (TypeError)
+print(True<4) #
+print(10.2<20)
+
+Special Comparison:
+print(10<20<30) # first compare 10<20 --> True
+                # Second compare 20<30 --> True Ans is True
+print(10<20<30<40) # 10<20 --> T, 30<40 --> T | Final Ans is True
+print(10<20<30<40>50) # 10<20 --> T, 30<40 --> T, 40>50 --> F | Final Ans False
+If all Comparison Retuens True Final Ans is True
+If at least 1 Comparison Returns False Final Ans is False
+
+print(10==10.0) #True
+print('Engineering' ==10 ) #False, Both are different Data Types
+print(10=='10')#f
+print(True == 1)
+print('True' ==1)
+
+General Observations:
+1. Zero considered as False
+2. Non Zero considered as a True
+
+AND operator
+if x is True then result is y
+if x is False then result is x 
+
+print(10 and 20) #20
+print(0 and 20) #0
+print('entc' and 'branch') #branch
+print('' and 'college') #''
+
+OR Operator
+if x is True then result is x
+if x is False then result is y 
+
+print(10 or 20) #10
+print(0 or 20) #20
+print('entc' or 'branch') #entc
+print('' or 'college') #college
+
+Not Operator
+print(not 10) #False
+print(not 0) #True
+print(not '') #True
+print(not 'Engineering') #False
+
+PN 88
+
+
+
+
+
 
 
 

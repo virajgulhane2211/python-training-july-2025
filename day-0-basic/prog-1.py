@@ -1,3 +1,4 @@
-a=[2,3]
-b=[2,3]
-print(a is b)
+print(not 10)
+print(not 0)
+print(not '')
+print(not 'Engineering')
