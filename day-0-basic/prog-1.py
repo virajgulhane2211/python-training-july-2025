@@ -1,4 +1,6 @@
-print(not 10)
-print(not 0)
-print(not '')
-print(not 'Engineering')
+usr = input('Enter User Name ')
+pwd = input('Enter Password ')
+if usr == 'rama' and pwd == 'entc':
+    print('Valid User')
+else:
+    print('Invalid User')

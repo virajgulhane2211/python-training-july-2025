@@ -756,7 +756,32 @@ print(not 0) #True
 print(not '') #True
 print(not 'Engineering') #False
 
-PN 88
+Application of Operator
+----------------------------------
+Ex-1:
+usr = input('Enter User Name ')
+pwd = input('Enter Password ')
+if usr == 'rama' and pwd == 'entc':
+    print('Valid User')
+else:
+    print('Invalid User')
+
+Ex-2: Read No form Keyboard and Print Minimum Valuen (2 Nos)
+a = int(input('Enter 1st No '))
+b = int(input('Enter 2nd No '))
+min = a if a<b else b
+print('Minimum No is', min)
+
+
+Ex-3: Read No from Keyboard and Print Minimum Value (3 Nos)
+a = int(input('Enter 1st No '))
+b = int(input('Enter 2nd No '))
+min = a if a<b and a<c else b if b<c else c
+print('Minimum No is', min)
+
+
+Pn 109
+
 
 
 
