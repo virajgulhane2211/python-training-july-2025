@@ -779,8 +779,212 @@ b = int(input('Enter 2nd No '))
 min = a if a<b and a<c else b if b<c else c
 print('Minimum No is', min)
 
+Mathematical Function (Math Module)
+-----------------------------------
+-Library contains group of Packages 
+-Packages contains group of Module
+-Module contains group of functions, variables, classes
 
-Pn 109
+A module is simply a Python file (.py) that contains functions, 
+classes, or variables which you can import and use in another file.
+
+ex: mathops.py (This is a module)
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+You can use this in another file:
+import mathops
+print(mathops.add(5, 3))  # Output: 8
+
+✅ Package:
+Group of Related Modules is called Package.
+A package is a directory (folder) that contains multiple related Python modules 
+and a special file named __init__.py (can be empty, but required for older versions 
+to recognize it as a package).
+
+mypackage/
+│
+├── __init__.py
+├── mathops.py
+└── stringops.py
+
+You can use it like this:
+
+from mypackage import mathops
+print(mathops.add(2, 3))
+from mypackage import stringops
+print(stringops.reverse("hello"))
+
+Math Module:
+import math
+dir(math)
+
+Ex:
+import math
+print(math.sqrt(16))  # Output: 4.0
+print(math.pi)        # Output: 3.141592653589793
+
+Ex: WAP to Find Area of Circle
+
+import math
+# Input radius from user
+radius = float(input("Enter the radius of the circle: "))
+# Calculate area using formula: πr²
+area = math.pi * radius * radius
+# Display the result
+print("Area of the circle is:", area)
+
+INPUT AND OUTPUT STATEMENTS
+---------------------------
+Input can be accepted by 2 ways --> input() function and command line Arguments
+input():
+-------
+In python3 input() function always returns str type only, so we have to perform 
+typecasting.
+Ex:
+x = input('Enter No ')
+print(type(x))
+y = int(input('Enter No )) #typecasting
+print(type(y))
+
+Ex: Python program to read employee data from the keyboard, perform typecasting
+# Read employee details from keyboard
+eid = int(input("Enter Employee ID (EID): "))                  # Typecast to int
+ename = input("Enter Employee Name (ENAME): ")                # String by default
+eadd = input("Enter Employee Address (EADD): ")               # String by default
+esal = float(input("Enter Employee Salary (ESAL): "))         # Typecast to float
+married = input("Is the employee married? (yes/no): ")        # String
+empno = int(input("Enter number of employees under him (EMP NO): "))  # Typecast to int
+
+# Print the details
+print("\n--- Employee Details ---")
+print("Employee ID      :", eid)
+print("Employee Name    :", ename)
+print("Employee Address :", eadd)
+print("Employee Salary  :", esal)
+print("Married          :", married)
+print("Employees under  :", empno)
+
+Ex: use eval
+# Read employee details using eval()
+eid = eval(input("Enter Employee ID (EID): "))
+ename = input("Enter Employee Name (ENAME): ")
+eadd = input("Enter Employee Address (EADD): ")
+esal = eval(input("Enter Employee Salary (ESAL): "))
+married = eval(input("Is the employee married? (True/False): "))
+empno = eval(input("Enter number of employees under him (EMP NO): "))
+
+# Print details
+print("\n--- Employee Details ---")
+print("Employee ID      :", eid)
+print("Employee Name    :", ename)
+print("Employee Address :", eadd)
+print("Employee Salary  :", esal)
+print("Married          :", married)
+print("Employees under  :", empno)
+
+Ex: eval for all data types
+# Program to demonstrate eval() for all basic data types
+
+print("Enter the following values using correct Python syntax:")
+
+# Integer
+i = eval(input("Enter an integer (e.g. 10): "))
+print("Integer:", i, "| Type:", type(i))
+
+# Float
+f = eval(input("Enter a float (e.g. 12.34): "))
+print("Float:", f, "| Type:", type(f))
+
+# String
+s = eval(input("Enter a string (e.g. 'hello'): "))
+print("String:", s, "| Type:", type(s))
+
+# Boolean
+b = eval(input("Enter a boolean (True/False): "))
+print("Boolean:", b, "| Type:", type(b))
+
+# List
+lst = eval(input("Enter a list (e.g. [1, 2, 3]): "))
+print("List:", lst, "| Type:", type(lst))
+
+# Tuple
+t = eval(input("Enter a tuple (e.g. (1, 2, 3)): "))
+print("Tuple:", t, "| Type:", type(t))
+
+# Dictionary
+d = eval(input("Enter a dictionary (e.g. {'a': 1, 'b': 2}): "))
+print("Dictionary:", d, "| Type:", type(d))
+
+# Set
+st = eval(input("Enter a set (e.g. {1, 2, 3}): "))
+print("Set:", st, "| Type:", type(st))
+
+Ex: How to Read Multiple Values from Keyboard in a Single Line
+a,b = [int(x) for x in input("Enter 2 numbers :").split()]
+print("Product is :", a*b)
+
+Ex: Write a program to read 3 float numbers from the keyboard
+with, seperator and print their sum.
+a,b,c= [float(x) for x in input("Enter 3 float numbers :").split(',')]
+print("The Sum is :", a+b+c)
+
+Ex:
+x = eval('10+20+30')
+print(x) #60
+
+Ex: Write a Program to accept list from the keynboard on the display
+l = eval(input('Enter List ')) #[1,2,3]
+print (type(l))
+print(l)
+
+command line Argument
+---------------------
+argv is not Array it is a List. It is available sys Module.
+The Argument which are passing at the time of execution are called Command Line
+Arguments.
+
+Ex:Write a Program to display Command Line Arguments
+from sys import argv
+print('The Number of Command Line Arguments:', len(argv))
+print('The List of Command Line Arguments:', argv)
+print('Command Line Arguments one by one:')
+for x in argv:
+    print(x)
+
+C:/py test.py 10 20 30 
+test.py
+10
+20
+30
+
+Index      Value
+┌───────┬──────────────┐
+│  0    │ 'test.py'    │  ← Script name
+├───────┼──────────────┤
+│  1    │      10      │  ← Argument 1
+├───────┼──────────────┤
+│  2    │      20      │  ← Argument 2
+├───────┼──────────────┤
+│  3    │      30      │  ← Argument 3
+└───────┴──────────────┘
+
+Ex: wap to print sum of numbers using command line Arguments
+from sys import argv
+sum = 0
+v = argv[1:]
+for x in v:
+    n = int(x)
+    sum = sum + n
+print('Sum is', sum)
+
+Output Statements
+-----------------
+
+
 
 
 
